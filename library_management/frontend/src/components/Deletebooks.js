@@ -43,10 +43,10 @@ class Deletebooks extends Component{
 
     render() {
         return (
-            <div className="body">
+            <div className="delete-body">
                 <form onSubmit={this.handleSubmit}>
                 <div className="form-body">
-                    <label className="form__label">
+                    <label className="delete__label">
                         Book Name:
                         <input className="form_input" name="book_name" type="text" value={this.state.book_name} onChange={this.handleChange}/>
                         { this.state.errors.book_name ? this.state.errors.book_name : null}
